@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards } from "swiper";
+import { EffectCards } from "swiper/modules";
 import { statictis } from "../../../data/features";
 import { testimonials } from "../../../data/tesimonials";
 import "swiper/css/effect-cards";

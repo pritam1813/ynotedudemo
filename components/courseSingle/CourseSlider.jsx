@@ -1,7 +1,7 @@
 "use client";
 import { coursesData } from "@/data/courses";
 import React, { useEffect, useState } from "react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Star from "../common/Star";
 import Image from "next/image";

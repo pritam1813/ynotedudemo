@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import { useCallback } from "react";
 
-const Particles = dynamic(() => import("react-particles"));
+const Particles = dynamic(() => import("@tsparticles/react"));
 
 import { loadFull } from "tsparticles";
 
