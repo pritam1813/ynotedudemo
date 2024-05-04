@@ -52,13 +52,14 @@ export default function Menu({ allClasses, headerPosition }) {
             <li className="menu-item-has-children">
               <Link
                 data-barba
-                href="#"
+                href="/"
                 className={menuItem == "Home" ? "activeMenu" : ""}
               >
-                Home <i className="icon-chevron-right text-13 ml-10"></i>
+                Home 
+                {/* <i className="icon-chevron-right text-13 ml-10"></i> */}
               </Link>
 
-              <ul className="subnav">
+              {/* <ul className="subnav">
                 <li className="menu__backButton js-nav-list-back">
                   <Link href="#">
                     <i className="icon-chevron-left text-13 mr-10"></i> Home
@@ -75,7 +76,7 @@ export default function Menu({ allClasses, headerPosition }) {
                     <Link href={elm.href}>{elm.label}</Link>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </li>
 
             <li className="menu-item-has-children -has-mega-menu">
@@ -221,12 +222,13 @@ export default function Menu({ allClasses, headerPosition }) {
             <li className="menu-item-has-children">
               <Link
                 data-barba
-                href="#"
+                href="/event-list-1"
                 className={menuItem == "Events" ? "activeMenu" : ""}
               >
-                Events <i className="icon-chevron-right text-13 ml-10"></i>
+                Events 
+                {/* <i className="icon-chevron-right text-13 ml-10"></i> */}
               </Link>
-              <ul className="subnav">
+              {/* <ul className="subnav">
                 <li className="menu__backButton js-nav-list-back">
                   <Link href="#">
                     <i className="icon-chevron-left text-13 mr-10"></i> Events
@@ -245,18 +247,19 @@ export default function Menu({ allClasses, headerPosition }) {
                     </Link>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </li>
 
             <li className="menu-item-has-children">
               <Link
                 data-barba
-                href="#"
+                href="/blog"
                 className={menuItem == "Blogs" ? "activeMenu" : ""}
               >
-                Blog <i className="icon-chevron-right text-13 ml-10"></i>
+                Blog 
+                {/* <i className="icon-chevron-right text-13 ml-10"></i> */}
               </Link>
-              <ul className="subnav">
+              {/* <ul className="subnav">
                 <li className="menu__backButton js-nav-list-back">
                   <Link href="#">
                     <i className="icon-chevron-left text-13 mr-10"></i> Blog
@@ -275,10 +278,10 @@ export default function Menu({ allClasses, headerPosition }) {
                     </Link>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </li>
 
-            <li className="menu-item-has-children">
+            {/* <li className="menu-item-has-children">
               <Link
                 data-barba
                 href="#"
@@ -404,7 +407,7 @@ export default function Menu({ allClasses, headerPosition }) {
                     </li>
                   ))}
               </ul>
-            </li>
+            </li> */}
 
             <li
               
