@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import CourceCard from "../homes/courseCards/CourseCardFive";
 import { coursesData } from "@/data/courses";
 import { courseStates } from "@/data/courses";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function CoursesSlider({ tabBtnStyle }) {
