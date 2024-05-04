@@ -84,13 +84,14 @@ export default function MobileMenu({ setActiveMobileMenu, activeMobileMenu }) {
                       >
                         {elm.title}
                       </span>
-                      <i
+                      {elm.title === "Courses" && <i
                         className={
                           menuNesting[0] == elm.title
                             ? "icon-chevron-right text-13 ml-10 active"
                             : "icon-chevron-right text-13 ml-10"
                         }
-                      ></i>
+                      ></i>}
+                      
                     </div>
 
                     {elm.links &&

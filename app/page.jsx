@@ -41,7 +41,7 @@ export default function HomePage() {
       <FeaturesOne/>
       <WhyCourse/>
       <Instructors/>
-      <GetApp/>
+      {/* <GetApp/> */}
       <Blog/>
       <Join/>
       <FooterOne/>
