@@ -10,7 +10,7 @@ const isProtectedRoute = createRouteMatcher(["/dashboard(.*)"]);
 export default clerkMiddleware((auth, req) => {
   env == "development"
     ? (URL = `http://${process.env.BASE_URL}`)
-    : (URL = `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`);
+    : (URL = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
 
   if (!auth().userId && isProtectedRoute(req)) {
     return NextResponse.redirect(`${URL}/login`);
