@@ -2,11 +2,20 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import { useUser } from "@clerk/nextjs";
 
 export default function EditProfile({ activeTab }) {
   const [previewImage, setPreviewImage] = useState(
     "/assets/img/dashboard/edit/1.png",
   );
+
+  // const { isLoaded, isSignedIn, user } = useUser();
+
+  // if (!isLoaded || !isSignedIn) {
+  //   return null;
+  // }
+  const {isSignedIn, user} = useUser();
+
   const handleImageChange = (event) => {
     const file = event.target.files[0];
 
@@ -49,7 +58,7 @@ export default function EditProfile({ activeTab }) {
         </label>
 
         <div className="col-auto">
-          <div className="text-16 fw-500 text-dark-1">Your avatar</div>
+          <div className="text-16 fw-500 text-dark-1">{isSignedIn ? user.username : 'Your Avatar'}</div>
           <div className="text-14 lh-1 mt-10">
             PNG or JPG no bigger than 800px wide and tall.
           </div>

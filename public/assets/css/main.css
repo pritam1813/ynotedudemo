@@ -15720,3 +15720,7 @@ table.table td {
   background: white;
 }
 
+
+.boxShadowNone {
+  box-shadow: none !important;
+}

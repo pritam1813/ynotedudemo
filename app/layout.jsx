@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Context from "@/context/Context";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -22,11 +23,13 @@ export default function RootLayout({ children }) {
     });
   }, []);
   return (
-    <html lang="en" className="">
-      <head></head>
-      <body>
-        <Context> {children}</Context>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" className="">
+        <head></head>
+        <body>
+          <Context> {children}</Context>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
