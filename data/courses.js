@@ -3,7 +3,7 @@ export const coursesData = [
       "id": 1,
       "imageSrc": "/assets/img/coursesCards/6.png",
       "authorImageSrc": "/assets/img/general/avatar-1.png",
-      "title": "Learn UI/UX Design Essential Training",
+      "title": "Learn Figma-UI/UX Design Essential Training",
       "rating": 4.3,
       "ratingCount": 1991,
       "lessonCount": 6,
